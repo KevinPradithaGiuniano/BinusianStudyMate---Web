@@ -1,0 +1,44 @@
+nav {
+    background-color: #13A0DB;
+    margin: 5px;
+    margin-left: 0;
+    width: 17%; /* Adjust the width as needed */
+    min-width: 200px; /* Set a minimum width to ensure visibility of the navbar */
+    padding-left: 5px; /* Add some right padding for spacing */
+    padding-top: 50px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+nav ul li a {
+    display: block;
+    color: #003366;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #002244;
+    color: white;
+}
+
+.active {
+    background-color: #005ec3;
+    color: white
+}

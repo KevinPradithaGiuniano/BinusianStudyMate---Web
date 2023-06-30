@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: #f2f2f2;
+    width: 25%; /* Adjust the width as needed */
+    min-width: 200px; /* Set a minimum width to ensure visibility of the navbar */
+    padding-right: 20px; /* Add some right padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: #003366;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #002244;
+    color: white;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

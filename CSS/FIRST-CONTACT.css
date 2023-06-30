@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(to bottom, #5fc1e8, #ffffff);
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+.login-container {
+    flex-grow: 1;
+    margin: 10vh auto;
+    width: 50vh;
+    padding: 40px;
+    background-color: #F08700;
+    border-radius: 25px;
+}
+
+.login-container h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #13A0DB;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="email"],
+.login-container form input[type="tel"],
+.login-container form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    height : 2vh;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="email"],
+.login-container form input[type="tel"],
+.login-container form input[type="date"],
+.login-container form label {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.login-container form button {
+    width: 100%;
+    margin-top : 2vh;
+    padding: 10px;
+    background-color: #13A0DB;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container form .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.login-container form .form-group label {
+    width: 150px;
+    margin-right: 10px;
+    text-align: right;
+    font-weight: bold;
+    vertical-align: middle;
+}

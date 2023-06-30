@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(to bottom, #5fc1e8, #ffffff);
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.create-study-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    height: 100vh;
+  }
+  
+  .create-study-group form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .create-study-group label {
+    margin-bottom: 10px;
+  }
+  
+  .create-study-group input,
+  .create-study-group textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .create-study-group button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+
+

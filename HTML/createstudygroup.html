@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/CREATE-STUDY-GROUP.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style-headfoot-Universal.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style-navbar.css">
+    <script src="../JAVASCRIPT/SCRIPT.js"></script>
+    <title>CREATE STUDY GROUP</title>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div>
+            <a href="../HTML/home.html">
+                <img src="../ASSETS/binusian-study-mate-logo-color-transparent-background.png" 
+                alt="Company Logo" class="company-logo">
+            </a>
+        </div>
+            <a href="../HTML/profile.html">
+                <img src="../ASSETS/profile.jpeg" alt="Profile" class="profile">
+            </a>
+    </header>
+
+    <div class="main-container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="../HTML/home.html"><strong>Home</strong></a></li>
+                <li class='active'><a href="../HTML/studygroup.html"><strong>Study Group</strong></a></li>
+                <li><a href="../HTML/studymate.html"><strong>Study Mate</strong></a></li>
+                <li><a href="../HTML/profile.html"><strong>Profile</strong></a></li>
+                <li style="margin-left: auto;"><a href="../HTML/landing-page.html" class="logout-button" onclick="return confirmLogout()"><strong>Logout</strong></a></li>
+            </ul>
+        </nav>    
+        
+        <div class="create-study-group">
+            <h2>Create Study Group</h2>
+            <form>
+              <label for="study-group-name">Study Group Name:</label>
+              <input type="text" id="study-group-name" name="study-group-name" required>
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required>
+              <label for="description">Description:</label>
+              <textarea id="description" name="description" required></textarea>
+              <button type="submit">Create Group</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <br>
+        <a href="blankloremipsum.html" style="text-decoration: none; color: rgba(255, 255, 255, 0.593)">Privacy Policy</a> <a> | </a> 
+        <a href="blankloremipsum.html" style="text-decoration: none; color: rgba(255, 255, 255, 0.593)">Contact Us</a>
+        <p>@2023 BinusianStudyMate. All Rights Reserved</p>
+    </footer>
+       
+</body>
+</html>

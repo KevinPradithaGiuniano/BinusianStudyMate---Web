@@ -1,0 +1,136 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+body {
+    background-image: linear-gradient(to bottom, #5fc1e8, #ffffff);
+    background-attachment: fixed;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    border: none;
+    margin: 5px;
+    background-color: #13A0DB;
+    border-radius: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center; 
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 25vh;
+    background-color: #F08700;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    padding: 20px;
+    align-items: center; /* Add this to center the elements */
+}
+
+.content .section-1 form {
+    display: flex; /* Add this to line up the search bar and button */
+    gap: 10px; /* Add this to give some space between the bar and button */
+}
+
+.content .section-1 form label{
+    padding-top:8px;
+    font-size: larger;
+}
+
+.content .section-1 form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px; /* Add this to give the search bar rounded corners */
+    border: none; /* Add this to remove the default border */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Add this to give a shadow effect */
+}
+
+.content .section-1 form input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff6700; /* Change this to your desired color */
+    border: none; /* Add this to remove the default border */
+    border-radius: 5px; /* Add this to give the button rounded corners */
+    color: white; /* Add this to make the button text white */
+    cursor: pointer; /* Add this to give the button a pointer cursor on hover */
+}
+
+.content .section-1 form input[type="submit"]:hover {
+    background-color: #ff4500; /* Change this to your desired hover color */
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 80vh;
+    background-color: #F08700;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if there are many friend profiles */
+}
+.friend-profile {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left:10px;
+    background-color: white;
+    align-items: center; 
+    width: 50%;
+    height: 20vh;
+    margin: auto; 
+}
+
+.friend-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px; 
+    margin-left: 20px; 
+    flex: 0.6; /* Set the flex-basis to 60% of the parent */
+}
+
+.profile-picture {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px; /* Adjust as needed */
+    margin-left:20px;
+}
+
+.mutual-servers {
+    align-items: left;
+    padding: 20px; /* Update padding to create some distance from the edges */
+    flex: 0.4; /* Set the flex-basis to 40% of the parent */
+    margin-left: 20px; /* Add some left margin to align the servers' names */
+}
+
+
+

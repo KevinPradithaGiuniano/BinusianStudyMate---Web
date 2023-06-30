@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/REGISTER.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style-headfoot-Land.css">
+    <title>REGISTER</title>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div>
+            <a href="../HTML/home.html">
+                <img src="../ASSETS/binusian-study-mate-logo-color-transparent-background.png" 
+                alt="Company Logo" class="company-logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h2>Register</h2>
+        <form action="process-signup.php" method="post" novalidate>
+            <label for="email">Binusian Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name=" password" required>
+            <br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <div class="terms-checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the terms and conditions</label>
+            </div>
+            <br>
+            <button type="submit"><!--<a href="../HTML/first-time-profile.html">-->Proceed<!--</a>--></button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="left-section">
+          <p>2023 | Binus University</p>
+        </div>
+        <div class="right-section">
+          <p>BinusianStudyMate</p>
+        </div>
+    </footer>
+</body>
+</html>

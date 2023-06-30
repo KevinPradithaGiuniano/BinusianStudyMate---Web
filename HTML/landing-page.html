@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/LANDINGPAGE.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style-headfoot-Land.css">
+    <title>LANDING PAGE</title>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div>
+            <img src="../ASSETS/binusian-study-mate-logo-color-transparent-background.png" alt="Company Logo" class="company-logo">
+            <!-- <span class="company-name">Your Phone Business</span> -->
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <form method="POST" action="login.php">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="login-links">
+                <a href="../HTML/register.html">Haven't got an account ?</a>
+                <span>|</span>
+                <a href="../HTML/forget-password.html">Forgot password?</a>
+            </div>
+            <br>
+            <button type="submit"><a href="../HTML/home.html">Proceed</a></button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="left-section">
+          <p>2023 | Binus University</p>
+        </div>
+        <div class="right-section">
+          <p>BinusianStudyMate</p>
+        </div>
+    </footer>
+</body>
+</html>

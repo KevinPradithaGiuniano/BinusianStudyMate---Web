@@ -1,0 +1,203 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #5fc1e8, #ffffff);
+  background-attachment: fixed;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  border: none;
+  margin: 5px;
+  background-color: #13A0DB;
+  border-radius: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center; 
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 25vh;
+  background-color: #F08700;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+  padding: 20px;
+  align-items: center; /* Add this to center the elements */
+}
+
+.content .section-1 form {
+  display: flex; /* Add this to line up the search bar and button */
+  gap: 10px; /* Add this to give some space between the bar and button */
+}
+
+.content .section-1 form label{
+  padding-top:8px;
+  font-size: larger;
+}
+
+.content .section-1 form input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px; /* Add this to give the search bar rounded corners */
+  border: none; /* Add this to remove the default border */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Add this to give a shadow effect */
+}
+
+.content .section-1 form input[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ff6700; /* Change this to your desired color */
+  border: none; /* Add this to remove the default border */
+  border-radius: 5px; /* Add this to give the button rounded corners */
+  color: white; /* Add this to make the button text white */
+  cursor: pointer; /* Add this to give the button a pointer cursor on hover */
+}
+
+.content .section-1 form input[type="submit"]:hover {
+  background-color: #ff4500; /* Change this to your desired hover color */
+}
+
+.section-2 {
+  display: flex;
+  width: 160vh;
+  background-color: #F08700;
+  padding: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  flex-direction: column; /* Add this to make the flex container layout horizontal */
+  justify-content: flex-start; /* Aligns the boxes to the start (left) */
+  align-items: start; /* Aligns the boxes vertically to the start */
+}
+
+.groups{
+  gap: 20px;
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  flex-direction: row;
+}
+
+.section-3 {
+  display: flex;
+  width: 160vh;
+  background-color: #F08700;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  padding: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  flex-direction: column; /* Add this to make the flex container layout horizontal */
+  justify-content: flex-start; /* Aligns the boxes to the start (left) */
+  align-items: start; /* Aligns the boxes vertically to the start */
+}
+
+.group-info {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  align-items: flex-start;
+  width: 300px; /* Adjust width as needed */
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.more-info {
+  display: none;
+  position: absolute; /* This positions the div relative to the group-info div */
+  width: 100%; /* This can be adjusted as needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white; /* White text */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.more-info {
+  display: none;
+  position: absolute; 
+  left: 0; 
+  width: 90%; 
+  margin: 10px; 
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1; 
+  opacity: 0; /* set the initial opacity to 0 */
+  transition: opacity 2s ease; /* add transition for opacity */
+}
+
+.group-info:hover .more-info {
+  display: block;
+  opacity: 1; /* set the opacity to 1 when hover */
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  border-radius: 5px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.create-button {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  margin-top: 20px;
+}
+
+.create-button button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-button button:hover {
+  background-color: #00214d;
+}
+
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/FIRST-PROFILE.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style-headfoot-Land.css">
+    <title>SET PROFILE</title>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div>
+            <img src="../ASSETS/binusian-study-mate-logo-color-transparent-background.png" alt="Company Logo" class="company-logo">
+            <!-- <span class="company-name">Your Phone Business</span> -->
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h2>First-Time Setup - Profile Picture</h2>
+        <div class="profile-display">
+    <div class="profile-container">
+        <img id="selected-profile" src="#" alt="Selected Profile">
+    </div>
+
+    </div>
+        <div class="browse-button">
+            <input type="file" id="file-input" accept="image/*" onchange="displaySelectedProfile(event)">
+            <label for="file-input">Browse</label>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="save-button">Save</button>
+            <button type="submit" class="next-button"><a href='../HTML/first-time-contact.html'>Next</a></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="left-section">
+          <p>2023 | Binus University</p>
+        </div>
+        <div class="right-section">
+          <p>BinusianStudyMate</p>
+        </div>
+    </footer>
+
+    <script>
+        function displaySelectedProfile(event) {
+            const selectedFile = event.target.files[0];
+            const selectedProfile = document.getElementById("selected-profile");
+            selectedProfile.src = URL.createObjectURL(selectedFile);
+        }
+    </script>
+</body>
+</html>

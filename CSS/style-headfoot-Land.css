@@ -1,0 +1,41 @@
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 10vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin : 0;
+    flex-shrink: 0;
+}
+
+.company-logo {
+    width: 250px;
+    height: 50px;
+    margin-right: 5px;
+    object-fit: contain; /* Adjust the object-fit property as needed */
+    max-width: 100%; /* Allow the logo to resize responsively */
+    max-height: 100%; /* Allow the logo to resize responsively */
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-section {
+    padding-left: 30px;
+    text-align: left;
+  }
+  
+  .right-section {
+    padding-right: 30px;
+    text-align: right;
+  }
